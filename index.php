@@ -17,10 +17,10 @@ $email = $_POST['email'];
 
 $sql = "INSERT INTO `form`.`form` (`name`, `age`, `email`) VALUES ('$name', '$age', '$email');";
 
-// if ($connection -> query($sql)==true) {
+if ($connection -> query($sql)==true) {
     
-//     echo "Successful insert into db";
-// }
+     echo "Successful insert into db";
+ }
 $connection ->close(); 
 
 ?>
